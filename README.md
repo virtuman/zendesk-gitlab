@@ -30,6 +30,7 @@ This [Zendesk](https://www.zendesk.com) app allows agents and admins to interfac
 3. If the change is done in GitLab directly - it will not push any info to Zendesk. This is a one-way communiction integration.
 4. % Done - doesn't work because I couldn't find how what info I could base this on?
 5. Didn't have any tickets with images, to test ImageAttachment and NonImageAttachments
+6. Sometimes Labels load only on second project list refresh
 
 ## TODO
 
