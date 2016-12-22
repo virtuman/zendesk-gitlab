@@ -1,0 +1,6 @@
+<div>
+    There was an error with the GitLab Integration. The error message was:
+</div>
+<div>
+{{error}}
+</div>

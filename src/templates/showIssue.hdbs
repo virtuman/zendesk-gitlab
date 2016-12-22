@@ -1,0 +1,26 @@
+<div>
+<p>
+    <a class="back_button">{{t 'back'}}</a> - <a href="{{url}}" target="_new">{{t 'openInGitLab' }} <i
+        class="icon-share-alt"> </i></a>
+</p>
+    <br />
+    <p>
+        <span class="label">{{ issue.labels }}</span> /
+        <span class="label">{{ issue.state }}</span> /
+        <span class="label">{{ issue.priority }}</span>
+    </p>
+    <br />
+    <p class="caption subject">{{t 'issue.title'}}</p>
+<p>{{ issue.title }}</p>
+<br />
+<p class="caption">{{t 'issue.author'}}</p>
+<p>{{ author.name }}</p>
+<br />
+<p class="caption">{{t 'issue.description'}}</p>
+<p>{{ issue.description }}</p>
+<br />
+<p class="caption">{{issue.done_ratio}}% {{t 'issue.done'}}
+<div class="progress">
+  <div class="bar" style="width: {{issue.done_ratio}}%;"></div>
+</div></p>
+</div>

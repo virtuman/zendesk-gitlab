@@ -1,0 +1,31 @@
+{
+  "name": "VirtuMAN GitLab",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alexei Smirnov",
+    "email": "alexei@virtuman.com"
+  },
+  "frameworkVersion": "1.0",
+  "location": "ticket_sidebar",
+  "defaultLocale": "en",
+  "private": true,
+  "singleInstall": false,
+  "parameters": [
+    {
+      "name": "gitlab_url",
+      "type": "url",
+      "required": true
+    },
+    {
+      "name": "apiKey",
+      "type": "text",
+      "required": true,
+      "secure": true
+    },
+    {
+      "name": "prepopulateTicketDescription",
+      "type": "checkbox"
+    }
+
+  ]
+}

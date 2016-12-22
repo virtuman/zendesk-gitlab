@@ -1,0 +1,9 @@
+<div id="projectList_div">
+    <ul class="zdgitlab-list">
+        {{#each project_data}}
+            <li class="zdgitlab-list__entry">
+                <a id="{{this.id}}" class="js-project" title="{{this.id}}">{{this.name_with_namespace}}</a>
+            </li>
+        {{/each}}
+    </ul>
+</div>

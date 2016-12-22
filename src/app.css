@@ -1,0 +1,67 @@
+textarea {
+    width: 280px;
+    height: 100px;
+    border-color: #d3d3d3;
+    background-image: none;
+}
+
+input {
+    width: 280px;
+}
+
+#newIssue {
+    font-size: 12px;
+}
+
+#newIssue > p {
+    margin-top: 5px;
+}
+
+.caption {
+    font-weight: bold;
+}
+
+.gitlab #projectList_div > p {
+    padding: 12px;
+}
+
+.navigation {
+    margin-top: .8em;
+}
+
+a.issue {
+    border-bottom: 1px solid #eee;
+    padding: .5em 0;
+    display: block;
+    &:first-child {
+        border-top: 1px solid #eee;
+    }
+    &.is-done {
+        text-decoration: line-through;
+        opacity: .4;
+    }
+}
+
+.form_field {
+    margin-bottom: 8px;
+}
+
+.progress {
+    width: 100px;
+}
+
+.zdgitlab-list {
+    list-style: none;
+    margin: -5px;
+
+    &__entry {
+        padding: 5px;
+        margin: 0;
+        a {
+             display: block;
+        }
+        &:hover {
+            background-color: #ebebeb;
+        }
+    }
+}

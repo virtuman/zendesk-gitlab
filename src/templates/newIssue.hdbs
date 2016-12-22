@@ -1,0 +1,29 @@
+<div id="newIssue">
+    <div class="form_field">
+        <label>{{t 'issue.subject'}}</label>
+        <p><input type="text" value="{{ subject }}" id="gitlab_subject"></p>
+    </div>
+    <div class="form_field">
+        <label>{{t 'issue.labels'}}</label>
+        <select id="gitlab_labels" multiple size="6">
+            {{#each labels}}
+                <option value="{{this.name}}">{{this.name}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form_field">
+        <label>{{t 'issue.assignTo'}}</label>
+        <select id="gitlab_assignee">
+            {{#each members}}
+                <option value="{{this.id}}">{{this.name}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form_field">
+        <label>{{t 'issue.additionalComments'}}</label>
+        <textarea id="gitlab_note" >{{ description }}</textarea>
+    </div>
+    <div class="form__field">
+        <p><a class="btn" id="submitToGitLab">{{t 'issue.submit'}}</a></p>
+    </div>
+</div>

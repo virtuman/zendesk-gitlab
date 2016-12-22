@@ -1,0 +1,20 @@
+{
+  "no-entries": "There are no assigned issues.",
+  "back" : "Back",
+  "openInGitLab" : "Open in GitLab",
+  "issues": "Issues",
+  "projects": "Projects",
+  "issue": {
+    "title": "Title",
+    "labels": "Labels",
+    "assignTo": "Assign To",
+    "project": "Project",
+    "description": "Description",
+    "done": "Done",
+    "author": "Author",
+    "additionalComments": "Additional Comments",
+    "submit": "Submit",
+    "posted": "Issue created!",
+    "pushed": "This ticket was pushed to GitLab"
+  }
+}
