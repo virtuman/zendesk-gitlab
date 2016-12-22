@@ -47,19 +47,19 @@ Install docker and run the following command:
 
 ### Project List Page
 
-![](https://github.com/virtuman/zendesk-gitlab/doc/screenshots/gitlab-project-list.png)
+![](https://github.com/virtuman/zendesk-gitlab/blob/master/doc/screenshots/gitlab-project-list.png)
 
 ### Issue List Page
 
-![](https://github.com/virtuman/zendesk-gitlab/doc/screenshots/associated-gitlab-ticket-list.png)
+![](https://github.com/virtuman/zendesk-gitlab/blob/master/doc/screenshots/associated-gitlab-ticket-list.png)
 
 ### Issue Details Page
 
-![](https://github.com/virtuman/zendesk-gitlab/doc/screenshots/gitlab-ticket-details.png)
+![](https://github.com/virtuman/zendesk-gitlab/blob/master/doc/screenshots/gitlab-ticket-details.png)
 
 ### New Issue Creation Page
 
-![](https://github.com/virtuman/zendesk-gitlab/doc/screenshots/gitlab-ticket-create.png)
+![](https://github.com/virtuman/zendesk-gitlab/blob/master/doc/screenshots/gitlab-ticket-create.png)
 
 ## TODO
 1. Implement OAUTH2 application wide authorization using gitlab oauth2
