@@ -241,7 +241,7 @@
                     clearInterval(interval);
                     this.showSpinner(false);
 
-                    var description = new Array();
+                    var description = [];
 
                     if (this.settings.prepopulateTicketDescription) {
                         this.ticket().comments().forEach(function (comment) {
@@ -378,4 +378,4 @@
             }
         }
     };
-}());    
+}());
