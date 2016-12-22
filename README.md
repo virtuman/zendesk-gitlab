@@ -8,9 +8,9 @@ Zendesk-GitLab makes ondemand operations only and pulls GitLab API. Here's a com
 2. When Zendesk ticket is created - it can link to an existing GitLab ticket, or create a new GitLab ticket
 3. List members of selected project
 4. List available labels of selected projects
-# Option to automatically pre-populate Title and Description fields from Zendesk ticket
-# Customize Title and Description when you create GitLab ticket
-# If the task has a Due Date - it will be transferred over to the GitLab ticket
+5. Option to automatically pre-populate Title and Description fields from Zendesk ticket
+6. Customize Title and Description when you create GitLab ticket
+7. If the task has a Due Date - it will be transferred over to the GitLab ticket
 
 [GitLab](https://www.gitlab.org) is an open source project management system that runs on a rails stack. With support for projects, issues, bugs and tasks, it can help manage projects efficiently and easily. 
 
