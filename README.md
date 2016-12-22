@@ -56,6 +56,7 @@ Once the package is generated - it will be placed in zendesk-gitlab/src/tmp/ fol
 
 ##### a. Using Native zendesk tools `zat`
 [Install Zendesk tools](https://developer.zendesk.com/apps/docs/agent/tools)
+
 ```
 cd zendesk-gitlab/src
 zat package
@@ -63,7 +64,9 @@ zat package
 
 ##### b. Using `zat` tool from `docker` image
 Install docker and run the following command:
+
 `docker run -v /path/to/zendesk-gitlab/src:/data -it -p 4567:4567 pindar/zat zat package`
+
 
 ## Specifications
 1. [GitLab API v3](https://docs.gitlab.com/ce/api/#resources)
