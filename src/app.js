@@ -255,10 +255,7 @@
                             });
                         });
 
-                        if (this.ticket().type() === "task") {
-                            description.push("Type: " + this.ticket().customField('due_date'));
-                        }
-                        if (this.ticket().type() === "incident") {
+                        if (this.ticket().type() === "incident" && this.ticket().customField('problem_id')) {
                             description.push("ProblemID: " + this.ticket().customField('problem_id'));
                         }
 
@@ -267,7 +264,7 @@
                         }
 
                         description.push("Type: " + this.ticket().type());
-                        description.push("Assignee: " + this.ticket().assignee().user());
+                        description.push("Assignee: " + this.ticket().assignee().user().name());
                         description.push("Priority: " + this.ticket().priority());
                         description.push("Requester: " + this.ticket().requester().name());
                         description.push("Status: " + this.ticket().status());
@@ -317,6 +314,7 @@
                 spawned++;
                 this.ajax('getIssue', issue.issue_id, issue.project_id)
                     .done(function (data) {
+                        data.closed = (data.state == 'closed');
                         issueDetails.push(data);
                     }.bind(this))
                     .fail(function() {

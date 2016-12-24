@@ -1,5 +1,5 @@
 {{#each issues}}
-    <a class="issue {{#if this.closed_on}} is-done {{/if}}" data-id="{{this.id}}" data-pid="{{this.project_id}}">
+    <a class="issue {{#if this.closed}} is-done {{/if}}" data-id="{{this.id}}" data-pid="{{this.project_id}}">
         {{this.id}}: {{this.title}}
     </a>
 {{else}}
