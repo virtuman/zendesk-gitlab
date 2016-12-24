@@ -25,8 +25,8 @@ This [Zendesk](https://www.zendesk.com) app allows agents and admins to interfac
 
 ## Known Issues
 
-1. Labels don't get recorded in the GitLab ticket - although labels are passed to GitLab API according to v3 specifications
-2. Assignee doesn't get recorded in the GitLab ticket - although labels are passed to GitLab API according to v3 specifications
+1. Note: This is more of an important thing to know: If the user whose token is used to create Issues in GitLab is not at least a *Reporter* level - Labels will not get recorded in the GitLab ticket. See [this issue](https://gitlab.com/gitlab-org/gitlab-ce/issues/22666)
+2. Note: It works exact same for specifying the Assignee of the GitLab ticket'
 3. If the change is done in GitLab directly - it will not push any info to Zendesk. This is a one-way communiction integration.
 4. % Done - doesn't work because I couldn't find how what info I could base this on?
 5. Didn't have any tickets with images, to test ImageAttachment and NonImageAttachments
