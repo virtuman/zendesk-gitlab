@@ -235,9 +235,9 @@
                     doneRequests++;
                 });
 
-            // Wait for both requests to finish
+            // Wait for all three requests to finish
             var interval = setInterval(function () {
-                if (doneRequests == 2) {
+                if (doneRequests == 3) {
                     clearInterval(interval);
                     this.showSpinner(false);
 
