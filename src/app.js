@@ -138,7 +138,7 @@
                 "ticket": {
                     "comment": {
                         "public": false,
-                        "value": this.I18n.t('issue.pushed') + "\n\n" + this.settings.gitlab_url + "/issues/" + id + "\n\n"
+                        "value": this.I18n.t('issue.pushed') + "\n\n" + this.settings.gitlab_url + "/product/" + project_id + "/issues/" + id + "\n\n"
                     }, "metadata": {"pushed_to_gitlab": true, "gitlab_id": id, "gitlab_project_id": project_id}
                 }
             };
