@@ -134,11 +134,13 @@
             services.notify(this.I18n.t('issue.posted'));
             var id = result.id;
             var project_id = result.project_id;
+            var web_url = result.web_url;
+
             var data = {
                 "ticket": {
                     "comment": {
                         "public": false,
-                        "value": this.I18n.t('issue.pushed') + "\n\n" + this.settings.gitlab_url + "/projects/" + project_id + "/issues/" + id + "\n\n"
+                        "value": this.I18n.t('issue.pushed') + "\n\n" + web_url + "\n\n"
                     }, "metadata": {"pushed_to_gitlab": true, "gitlab_id": id, "gitlab_project_id": project_id}
                 }
             };
