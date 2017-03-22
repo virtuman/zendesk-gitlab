@@ -265,8 +265,9 @@
                             description.push("Due Date: " + this.ticket().customField('due_date'));
                         }
 
+                        var username = this.ticket().assignee().user() ? this.ticket().assignee().user().name() : 'Nobody'
                         description.push("Type: " + this.ticket().type());
-                        description.push("Assignee: " + this.ticket().assignee().user().name());
+                        description.push("Assignee: " + username);
                         description.push("Priority: " + this.ticket().priority());
                         description.push("Requester: " + this.ticket().requester().name());
                         description.push("Status: " + this.ticket().status());
