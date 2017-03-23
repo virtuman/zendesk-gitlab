@@ -198,7 +198,7 @@
                     "assignee_id": asignee,
                     "milestone_id": milestone,
                     "due_date": "due_date",
-                    "labels": labels.join(',')
+                    "labels": labels ? labels.join(',') : ''
                 };
                 this.ajax('postGitLab', this.settings.project, data);
             }
@@ -265,7 +265,7 @@
                             description.push("Due Date: " + this.ticket().customField('due_date'));
                         }
 
-                        var username = this.ticket().assignee().user() ? this.ticket().assignee().user().name() : 'Nobody'
+                        var username = this.ticket().assignee().user() ? this.ticket().assignee().user().name() : 'Nobody';
                         description.push("Type: " + this.ticket().type());
                         description.push("Assignee: " + username);
                         description.push("Priority: " + this.ticket().priority());
